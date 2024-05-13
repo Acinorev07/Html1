@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content ="width= device-width, initial-scale = 1.0">
+        <title>
+            Fundamentos de programacion JavaScript
+        </title>
+
+    </head>
+
+    
+
+    <body>
+        <h1>Fundamentos Java Script</h1>
+
+        <script>
+        /*    let hola2 = "Hola mundo";
+            console.log(hola2);
+
+        if (hola2){
+            console.log("Hola");
+        }else{
+            console.log("UFFF");
+        }
+
+        let dia = 5;
+
+        switch(dia){
+            case 0: 
+                console.log("Domingo");
+                break;
+            case 1: 
+                console.log("Lunes");
+                break;
+            case 2: 
+                console.log("Martes");
+                break;
+            case 3:
+                console.log("Miercoles");
+                break;
+            case 4:
+                console.log("Jueves");
+                break;
+            case 5:
+                console.log("Viernes");
+                break;
+            case 6:
+                console.log("Sabado");
+                break;
+            default: 
+                console.log("El dia no existe");
+                break;
+
+        }*/
+
+        let contador = 0;
+
+       /* while(contador < 10){
+            console.log("While" + contador);
+            contador++;
+        }*/
+       /* while(contador <= 10){
+            console.log("While" + contador);
+            contador++;
+        }*/
+        /*while(contador >= 10){
+            console.log("While" + contador);
+            contador++;
+        }*/
+       /* while(contador < 10){
+           contador++;
+            console.log("While" + contador);
+            
+        }*/
+        /*
+         while(contador < 10){
+           
+            console.log("While" + contador);
+            contador++;
+        }*/
+        /*while(contador > 10){
+           
+           console.log("While" + contador);
+           contador++;
+       }*/
+       /*do{
+         console.log("Do-while" + contador);
+         contador++;
+       }while(
+        contador < 10
+       );*/
+       /*do{
+         console.log("Do-while" + contador);
+         contador++;
+       }while(
+        contador < 10
+       );*/ 
+       /*do{
+         console.log("Do-while" + contador);
+         contador++;
+       }while(
+        contador > 10
+       );/*
+       /*do{
+        contador++;
+         console.log("Do-while" + contador);
+         
+       }while(
+        contador < 10
+       );*/
+       
+       /*for (i = 0; i < 10; i++){
+        console.log("for " + i);
+       }*/
+       /*for (i = 11; i > 10; i++){
+        console.log("for " + i);
+       }*/
+
+      /* try{
+        console.log("En el bloque try se agrega el codigo a evaluar");
+        noExiste;
+        console.log("Segundo mensaje en el bloque try");
+       }catch(error){
+        console.log("Captura cualquier error surgido");
+        console.log(error);
+       }finally{
+        console.log("El bloque finally se ejecuta siempre al final de un try-catch, exista o no un error");
+       }
+*/ 
+
+       /*try{
+        let numero = 10;
+        if (isNaN(numero)){
+            throw new Error("El caracter introducido no es un numero");
+
+        }
+        console.log(numero*numero);
+       }catch(error){
+        console.log(`Se produjo el siguiente error: ${error}`);
+       
+       }*/
+
+      /* try{
+        let numero = "y";
+        if (isNaN(numero)){
+            throw new Error("El caracter introducido no es un numero");
+
+        }
+        console.log(numero*numero);
+       }catch(error){
+        console.log(`Se produjo el siguiente error: ${error}`);
+       
+       }*/
+
+       const numero = [1,2,3,4,5,6,7,8,9,0]
+
+      /* for ( let i = 0; i< numero.length; i++){
+        console.log(numero[i]);
+       }*/
+
+       /*for ( let i = 0; i< numero.length; i++){
+        if (i===5){
+            break;
+        }
+        console.log(numero[i]);
+       }*/
+       /*for ( let i = 0; i< numero.length; i++){
+        if (i===5){
+            continue;
+        }
+        console.log(numero[i]);
+       }*/
+
+       //Sin destructuracion
+       const numeros = [1,2,3];
+
+      /* let uno = numeros[0],
+           dos = numeros[1],
+           tres = numeros[2];
+
+        console.log(uno,dos,tres);*/
+
+      //con destructuracion
+
+      /*const [one, two, three] = numeros;
+
+      console.log(one, two, three);
+*/
+      // Creamos un objeto 
+/*let persona = {
+    nombre: "Fredy",
+    apellido: "Acuña",
+    edad: 27
+}
+*/
+//Usamos la destructuracion con el objeto personas
+/*let {nombre, apellido, edad} = persona;
+console.log(nombre, apellido, edad); */
+
+/*let {nombre, edad ,apellido} = persona;
+console.log(nombre, apellido, edad); */
+
+//Objetos literales
+
+let nombre= "Kenai",
+    edad= 7;
+
+   /* const perro = {
+        nombre,
+        edad
+    }
+
+    console.log(perro);*/
+
+   /* const perro = {
+        nombre,
+        edad,
+        raza : "Callejero",
+    }
+
+    console.log(perro);*/
+
+    /*const perro = {
+        nombre,
+        edad,
+        raza : "Callejero",
+        ladrar(){
+            console.log("Guauu Guauu");
+        }
+    }
+
+    console.log(perro);
+
+    perro.ladrar();*/
+
+
+    // JavaScript #20 parametros
+
+   /* function sumar(a,b,...c){
+        let resultado = a+b;
+
+        c.forEach(
+            function(n){
+                resultado += n;
+            }
+        );
+
+        return resultado;
+    }
+
+    console.log(sumar(2,3,7,12,20));*/
+
+
+    /*
+    saludar();
+
+    function saludar(){
+        console.log(`Hola`);
+    }
+
+    //saludar();
+*/ 
+
+/*
+saludar(); 
+    const saludar = function(){
+        console.log(`Hola`);
+    }
+
+   //saludar();
+*/ 
+
+//Prototipos
+/*
+function hablar(linea){
+    console.log(`El conejo ${this.tipo} dice '${linea}'`);
+}
+let conejoBlanco = {
+    tipo: "blanco",
+    hablar
+}
+let conejoHambriento = {
+    tipo: "Hambriento",
+    hablar
+}
+
+conejoBlanco.hablar("Oh mis orejas y bigotes, " + "que tarde se esta haciendo!");
+
+
+*/ 
+/*
+function normalizar(){
+    console.log(this.coordinadas.map(n => n/this.length));
+    
+}
+
+normalizar.call({coordinadas: [0, 2, 3], length: 5});
+*/
+
+/*let vacio = {};
+console.log(vacio);
+
+console.log(vacio.toString());
+*/
+/*console.log(Object.getPrototypeOf({}));
+console.log(Object.prototype);
+console.log(Object.getPrototypeOf({}) == Object.prototype);*/ 
+//*************** Funcion constructora************
+
+// La funcion constructora solo posee los atributos
+// function Animal(nombre, genero){
+//     this.nombre = nombre;
+//     this.genero = genero;
+
+// }
+
+// // Los metodos son pasados por aparte al prototipo
+
+// Animal.prototype.sonar = function (){
+//      console.log("Hago sonidos porque estoy vivoracho...");
+// }
+
+// Animal.prototype.saludar = function(){
+//         console.log(`Hola me llamo ${this.nombre}`)
+// }
+
+// Crearemos la clase Animal
+
+class Animal{
+
+    constructor(nombre,genero){
+        this.nombre = nombre;
+        this.genero = genero;
+    }
+
+    sonar(){
+
+    
+        console.log("Hago sonidos porque estoy vivo");
+
+    }
+
+    saludar(){
+
+        console.log(`Hola mucho gusto, me llamo ${this.nombre}`)
+
+    }
+
+}
+
+
+
+
+
+// const snoopy = new Animal( "Snoopy", "Macho"),
+//       LolaBunny = new Animal("Lola Bunny","Hembra");
+
+// class Perro extends Animal {
+
+//     constructor (nombre, genero, tamanio){
+//         super (nombre,genero);
+//         this.tamanio = tamanio;
+//         this.raza = null;
+//     }
+
+//     sonar(){
+//         console.log("Soy un perro y mi sonido es ladrar")
+
+//     }
+
+//     saludar(){
+
+//         console.log(`Hola mucho gusto, me llamo ${this.nombre}`)
+
+//     }
+
+//     //Permite obtener el valor del atributo raza
+//     get getRaza(){
+//         return this.raza;
+//     }
+
+//     //Permite modificar el valor del atributo raza
+//     set setRaza(raza){
+//         this.raza = raza;
+//     }
+
+
+// }
+
+// const snoopy = new Perro( "Snoopy", "Macho", "Pequeño");
+
+// //console.log(Animal);
+// console.log(snoopy.getRaza);
+// //console.log(LolaBunny);
+
+// snoopy.saludar();
+// snoopy.sonar();
+// snoopy.setRaza = "Bull terrier";
+
+// console.log(snoopy.getRaza);
+
+console.time('Cuanto tiempo tarda mi codigo');
+
+// const arreglo = Array(1000000);
+
+// for (let i = 0; i<arreglo.length; i++){
+//     arreglo[i] = i;
+// }
+
+// let x = 3, y = 2, pruebaXY = "Se espera que x siempre sea menor que y";
+
+// console.assert(x<y,{x,y,pruebaXY});
+
+// console.log(Date);
+console.log(Date());
+
+let fecha = new Date();
+console.log(fecha);
+
+console.log(fecha.getDate());
+console.log(fecha.getDay());
+
+console.log()
+console.timeEnd('Cuanto tiempo tarda mi codigo');
+
+//console.log(arreglo);
+
+        </script>
+    </body>
+</html>

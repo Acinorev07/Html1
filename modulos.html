@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport"
+          content = "width = device-width, initial-scale = 1.0">
+
+    <title>Modulos en JavaScript</title>
+    <style>
+        :root{
+            --yellow-color: #121308;
+            --dark-color: #442d2d;
+        }
+
+        .cards{
+            border: thin solid var(--dark-color);
+            padding: 1rem;
+        }
+
+        .card{
+            display:inline-block;
+            background-color: var(--dark-color);
+            color:var(--yellow-color);
+        }
+
+        .card figcaption{
+            padding: 1rem;
+        } 
+        .rotate-45{
+            transform: rotate(135deg);
+
+        }
+        .rotate-135{
+            transform: rotate(135deg);
+        }
+
+        
+        .opacity-80{
+                opacity:.8;
+            }
+
+        .sepia{
+            filter:sepia(1);
+        }
+    
+
+    </style>
+</head>
+<body>
+    <h1>WEB APIs</h1>
+    <h2>DOM: Document Object Model</h2>
+    <h2>BOM: Broser Object Model</h2>
+    
+        <ul>
+            <li>Eventos</li>
+            <li>Forms</li>
+            <li>AJAX-Fetch</li>
+            <li>History</li>
+            <li>WEB storage</li>
+            <li>Geolocation</li>
+            <li>Drag y Drop</li>
+            <li>Indexed</li>
+            <li>Canvas</li>
+            <li>Match-Media</li>
+            <li>etc...</li>
+        </ul>
+    <!-- <script src = "JS/modulos.js" type = "module"></script> -->
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Manejo del DOM</h3>
+
+    <p id="que-es">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                   Voluptatum expedita repellendus, modi sequi ullam sint minima nulla aspernatur reiciendis 
+                   cum labore debitis tenetur facilis facere magni a voluptates dolorum temporibus!
+                </p>
+
+     <nav id="menu">
+        <ul>
+            <li><a href="">seccion 1</a></li>
+            <li><a href="">seccion 2</a></li>
+            <li><a href="">seccion 3</a></li>
+            <li><a href="">seccion 4</a></li>
+            <li><a href="">seccion 5</a></li>
+        </ul>
+     </nav>
+
+     <input type = "text" name = "nombre" placeholder ="Nombre">
+
+     
+     <a class = "link-dom" href ="dom.html">DOM</a>
+
+     <section class="cards">
+        <!-- <figure class="card">
+            <img src="imagenes//LogoEmpresa.png" alt="Tech" width="200" height="200">
+            <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="imagenes//Prueba1.jpg" alt="Animals" >
+            <figcaption>animals</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="imagenes//Screenshot_20231005-100917.png" alt="People">
+            <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="imagenes/Screenshot_20231005-103534.png" alt="Nature">
+            <figcaption>Nature</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="imagenes/Screenshot_20231005-103609.png" alt="Arch">
+            <figcaption>Arch</figcaption>
+        </figure> -->
+     </section>
+
+
+
+
+
+    <template id = "template-card">
+        <figure class = "card">
+            <img>
+            <figcaption></figcaption>
+        </figure>
+    </template>
+
+
+
+
+
+    <script src="JS/dom.js"></script>
+
+
+</body>
+</html>
