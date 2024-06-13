@@ -63,6 +63,7 @@ img{
     left:0;
     right:0;
     width:100%;
+    overflow-y: auto;
     background-color:var(--second-modal-color);
     transition:transform .3s ease;
     /* De arriba */
@@ -185,3 +186,55 @@ img{
     color:var(--main-color);
 }
 
+/* Deteccion de red o network status: Mostraremos dos mensajes emergente que muestren la
+conexion que hay del dispositivo a internet, si hay internet, el mensaje es verde, si no hay
+internet, el mensaje es rojo */
+.online,
+.offline {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:1rem;
+    font-size: 1.5rem;
+    font-weight:bold;
+    text-align:center;
+    background-color: #1b5e20;
+    color: #fff;
+}
+
+.offline{
+    background-color: #b71c1c;
+}
+
+/*Daremos estilos a la seccion 10 */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Define una altura fija */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor manteniendo su proporción */
+}
+
+.card figcaption {
+    padding: 1rem;
+    text-align: center;
+}
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
