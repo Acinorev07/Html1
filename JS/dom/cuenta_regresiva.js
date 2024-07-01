@@ -18,10 +18,10 @@ export default function countdown(id, limitDate, finalMessage){
         // console.log(now2.getMinutes());
         // console.log(now2.getSeconds());
         let limitTime = countdownDate - now;
-        console.log("limitTime" + limitTime);
+        // console.log("limitTime" + limitTime);
         // let days = ("0"+Math.floor(limitTime/(1000*60*60*24))).slice(-2);
         let days = Math.floor(limitTime/(1000*60*60*24));
-        console.log(days);
+        // console.log(days);
         let hours = ("0"+Math.floor((limitTime%(1000*60*60*24))/(1000*60*60))).slice(-2);
         let minutes = ("0"+Math.floor((limitTime%(1000*60*60))/(1000*60))).slice(-2);
         let seconds = ("0"+Math.floor((limitTime%(1000*60))/(1000))).slice(-2);

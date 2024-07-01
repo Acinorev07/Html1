@@ -12,13 +12,14 @@ export default function networkStatus(){
 
         //Creamos un elemento div y en el documento y lo almacenamos en una variable
         const $div = d.createElement("div")
-
         //Creamos la estructura de control
         if(n.onLine){
+            console.log(`Deteccion de red: ${n.onLine}`)
             $div.textContent = "Conexion reestablecida";
             $div.classList.add("online");
             $div.classList.remove("offline");
         }else{
+            console.log(`Deteccion de red: ${n.onLine}`)
             $div.textContent = "Conexion perdida";
             $div.classList.add("offline");
             $div.classList.remove("online");

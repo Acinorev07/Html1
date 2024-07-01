@@ -202,6 +202,9 @@ internet, el mensaje es rojo */
     background-color: #1b5e20;
     color: #fff;
 }
+/* .online {
+    background-color: #1b5e20;
+} */
 
 .offline{
     background-color: #b71c1c;
@@ -338,6 +341,7 @@ internet, el mensaje es rojo */
         transform: translate(0,0);
         opacity: 1;
         visibility: visible;
+        
     }
 
     .panel-btn {
@@ -365,12 +369,35 @@ internet, el mensaje es rojo */
     .scroll-top-btn {
         right: initial;
         left: calc(4.25rem + 1vw);
+        
     }
 
     .video {
         width: 500px;
         height: 500px;
     }
+
+        /* Estilos para online y offline dentro de la media query */
+        .online,
+        .offline {
+            grid-area: header;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+    
+        .online {
+            background-color: #1b5e20;
+        }
+    
+        .offline {
+            background-color: #b71c1c;
+        }
+
 }
 
 /* ***********HAREMOS LOS ESTILOS PARA EL FORMULARIO******************* */
@@ -385,7 +412,7 @@ internet, el mensaje es rojo */
 
 }
 
-.contact-form>* {
+.contact-form > * {
     padding:0.5rem;
     margin: 1rem auto;
     display: block;
@@ -436,27 +463,23 @@ internet, el mensaje es rojo */
 }
 
 .contact-form-error.is-active {
-
-    display:block;
+    display: block;
     animation: show-message 1s 1 normal 0s ease-out both;
-
 }
 
 .none {
     display:none;
 }
 
-@keyframes show-message {
+@keyframes show-message { 
     0% {
-
-        visibility: hidden;
-        opacity: 0;
-
+     visibility: hidden;
+     opacity: 0;
     }
 
     100% {
-        visibility: visible;
-        opacity: 1; 
+     visibility: visible;
+     opacity: 1; 
     }
 }
 

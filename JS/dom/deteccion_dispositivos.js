@@ -5,7 +5,7 @@ basados en los datos del dispositivos del usuraio. */
 const d = document, n = navigator, ua = n.userAgent;
 export default function userDeviceInfo(id){
 //Muestra una cadena de texto con toda la informacion del dispositivo desde el que nos visita el usuario
-    console.log(ua);
+    // console.log(ua);
 //Guardamos el id del div donde mostraremos la informacion.
 const $id = d.getElementById(id);
 //Variables de objeto para detectar desde que dispositivo nos visitan.

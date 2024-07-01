@@ -15,29 +15,30 @@ export default function slider() {
 
     d.addEventListener("click", (e) => {
 
-        console.log(`e.target:  ${e.target}`);
-        console.log(`next:  ${$nextBtn}`);
-        console.log(`prev:  ${$prevBtn}`);
-        console.log(`slides: ${$slides}`);
+        // console.log(`e.target:  ${e.target}`);
+        // console.log(`next:  ${$nextBtn}`);
+        // console.log(`prev:  ${$prevBtn}`);
+        // console.log(`slides: ${$slides}`);
         
-        console.log(currentIndex);
+        // console.log(currentIndex);
 
         // Si el objeto que originó el evento "e.target" es igual a algún botón entonces
         if (e.target === $prevBtn) {
             e.preventDefault();
-            console.log(`currentIndex_prev_1 :  ${currentIndex}`);
+            // console.log(`currentIndex_prev_1 :  ${currentIndex}`);
             // Removemos la clase active del slide actual
             $slides[currentIndex].classList.remove("active");//.remove("active");
             // Decrementamos el índice
             currentIndex--;
 
-            console.log(`currentIndex_prev_2 :  ${currentIndex}`);
+            // console.log(`currentIndex_prev_2 :  ${currentIndex}`);
+            
             // Si el índice es menor a 0, lo establecemos al último slide
             if (currentIndex < 0) {
                 currentIndex = $slides.length - 1;
             }
 
-            console.log(`currentIndex_prev_3 :  ${currentIndex}`);
+            // console.log(`currentIndex_prev_3 :  ${currentIndex}`);
             // Añadimos la clase active al nuevo slide
             $slides[currentIndex].classList.add("active");
         }

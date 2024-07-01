@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang = "es" data-dark>
     <head>
@@ -40,6 +41,10 @@
                 <a href="#seccion13" data-scroll-spy>Exportar a Excel</a>
                 <a href="#seccion14" data-scroll-spy>Video inteligente</a>
                 <a href="#seccion15" data-scroll-spy>Validaciones de formulario</a>
+                <a href="#seccion16" data-scroll-spy>Narrador</a>
+                <a href="#seccion17" data-scroll-spy>Consumo de APIs XMLHttpRequest</a>
+                <a href="#seccion18" data-scroll-spy>Consumo de APIs Fetcht</a>
+                <a href="#seccion19" data-scroll-spy>Consumo de APIs Fetch-async-await</a>
             </nav>
         </aside>
     
@@ -86,10 +91,10 @@
                     <br>
                     <input name = "ancho" type="text" placeholder = "Ancho" required>
                     <br>
-                    <input name = "alto" type="text" placeholder = "Alto" required>
+                    <input name = "alto" type= "text" placeholder = "Alto" required>
                     <br>
-                    <input name = "probar" type ="submit" value = "Probar">
-                    <input name="cerrar" type="button" value="Cerrar">
+                    <input name = "probar" type = "submit" value = "Probar">
+                    <input name = "cerrar" type = "button" value = "Cerrar">
                 </form>
             </section>
             <section id="seccion6" class="section" data-scroll-spy>
@@ -221,7 +226,7 @@
         <section id="seccion15" class="section" data-scroll-spy>
             <h2>Validaciones de formulario</h2>
             <form class="contact-form">
-                <input type="text" name="name" placeholder="Escribe tu nombre" title="El nombre solo hacepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" required>
+                <input type="text" name="name" placeholder="Escribe tu nombre" title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" required>
                 <input type="email" name="email" placeholder="Escribe tu email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[a-z0-9]+)*@[a-z0-9]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                 <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
                 <textarea name="comments" cds="50" rows="5" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
@@ -236,6 +241,37 @@
                 </div>
             </form>
 
+        </section>
+        <section id="seccion16" class="section" data-scroll-spy>
+            <h2>Narrador</h2>
+         
+            <select id="speech-select">
+                
+                <option value="">--- Elige una voz ---</option>
+            </select>
+                 <br><br>
+                <textarea id="speech-text" cols = "50" rows="5" placeholder="Ingresa un texto para leerlo..."></textarea>
+                <br><br>
+                <button id="speech-btn">Leer texto</button>
+ 
+        </section>
+        <section id="seccion17" class="section" data-scroll-spy>
+            <h2>Consumo de APIs XMLHttpRequest</h2>
+         
+            <ol id="xhr"></ol>
+ 
+        </section>
+        <section id="seccion18" class="section" data-scroll-spy>
+            <h2>Consumo de APIs Fetch</h2>
+         
+            <ol id="fetch"></ol>
+ 
+        </section>
+        <section id="seccion19" class="section" data-scroll-spy>
+            <h2>Consumo de APIs Fetch-async-await</h2>
+         
+            <ol id="fetch-async"></ol>
+ 
         </section>
         </main>
 <button class="scroll-top-btn">

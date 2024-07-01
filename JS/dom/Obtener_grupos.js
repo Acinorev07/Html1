@@ -41,6 +41,6 @@ export default function gruposFacebook() {
         //     exportarAExcel(data);
         // }
 
-        console.log(resultado)
+        // console.log(resultado)
     });
 }
